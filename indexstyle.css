@@ -1,4 +1,5 @@
 body{
+    
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     margin: 0%;
     padding: 0%;
@@ -125,7 +126,7 @@ input{
 .user_img{
      
 
-    width: 80%;
+    width: 50%;
     border: #e8491d 3px solid; 
 } 
 
@@ -135,7 +136,7 @@ input{
 
 
 #final_result  #output{
-    width: 60%;
+    width: 35%;
 }
 
 /* final result  */ 
@@ -180,6 +181,15 @@ footer{
     }
     #enter_playername form{
         padding-bottom: 0%;
+    }
+
+    .user_img{
+        width: 80%;
+        border: #e8491d 3px solid; 
+    } 
+
+    #final_result  #output{
+        width: 45%;
     }
     #boxes .box{
         text-align: center;
