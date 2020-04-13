@@ -12,12 +12,12 @@
     <header>
         <div class="container">
             <div id="gamename">
-            <h1>Rock  Paper  Scissor </h1>
+            <h1><span id="highlight">Rock</span>  Paper  Scissor </h1>
         </div>
 
             <nav>
                 <ul>
-                    <li><a href="index.html">home</a></li>
+                    <li id="current"><a href="index.html">home</a></li>
                     <li><a href="#">about</a></li>
                 </ul>
             </nav>
@@ -44,14 +44,14 @@
             <div class="box">
                 <img class="user_img" src="https://joeschmoe.io/api/v1/user1" alt="Retry"><br>
                 <input type="text" id="input1" placeholder="Enter any one character">
-                <button onclick="play1()">Player1</button>
+                <button onclick="play1()">Player1</button><br>
                 <img id="disp1" src="" alt="">
             </div>
             
             <div class="box">
                 <img class="user_img"  src="https://joeschmoe.io/api/v1/user2" alt="Retry"><br>
                 <input type="text" id="input2" placeholder="Enter any one character">
-                <button onclick="play2()">Player2</button>
+                <button onclick="play2()">Player2</button><br>
                 <img id="disp2" src="" alt="">  
     
             </div>
@@ -63,7 +63,7 @@
     <div class="container">
 
 
-        <br><button onclick="result()">Result</button><br>
+        <br><button id="result_button" onclick="result()">Result</button><br>
         <h4 class="winner"></h4>
         <img id="output" class="user_img"   src="" alt=""><br>
         <h3 class="winner"> </h3>
@@ -142,14 +142,14 @@
                 console.log(name2 + " player2 won");
                 document.getElementsByClassName("winner")[0].innerHTML = "And the Winner of this contest is " + name2;
                 document.getElementById("output").src = "https://joeschmoe.io/api/v1/=" + name2;
-                document.getElementsByClassName("winner")[1].innerHTML = "Congratulations Player1: " + name2;
+                document.getElementsByClassName("winner")[1].innerHTML = "Congratulations Player2: " + name2;
 
             }
             else {
                 console.log(name1 + "player1 won");
                 document.getElementsByClassName("winner")[0].innerHTML = "And the Winner of this contest is " + name1;
                 document.getElementById("output").src = "https://joeschmoe.io/api/v1/=" + name1;
-                document.getElementsByClassName("winner")[1].innerHTML = "Congratulations Player2: " + name1;
+                document.getElementsByClassName("winner")[1].innerHTML = "Congratulations Player1: " + name1;
 
 
             }
