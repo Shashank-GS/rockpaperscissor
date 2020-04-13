@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock  Paper  Scissor</title>
     <link rel="stylesheet" href="indexstyle.css">
 </head>
 
@@ -133,7 +133,11 @@
         }
         function result() {
             if (asc1 == asc2)
-                console.log("DRAW");
+            {
+                console.log("DRAW"); 
+                document.getElementsByClassName("winner")[0].innerHTML = "The game has ended in a draw... Please, Refresh the page and challenge again to try your luck...";
+
+            }
             else if ((asc1 == 0 && asc2 == 1) || (asc1 == 1 && asc2 == 2) || (asc1 == 2 && asc2 == 0)) {
                 console.log(name2 + " player2 won");
                 document.getElementsByClassName("winner")[0].innerHTML = "And the Winner of this contest is " + name2;
